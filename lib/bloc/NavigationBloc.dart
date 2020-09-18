@@ -10,9 +10,9 @@ class NavigationBloc extends Cubit<int>{
   //method to handle navigation bar tap events
   void onNavigationBarTab(int index){
 
-    if(screenOpenStack.contains(index)){
-      screenOpenStack.remove(index);
-    }
+    // if(screenOpenStack.contains(index)){
+    //   screenOpenStack.remove(index);
+    // }
     if(screenOpenStack.length == 0)
       screenOpenStack.add(currentSelectedScreen);
     screenOpenStack.add(index);
